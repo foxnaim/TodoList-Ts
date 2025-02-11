@@ -1,8 +1,11 @@
 import React from 'react';
+import TaskManager from './components/TaskManager';
 
 const App = () => {
   return (
-    <div>App</div>
+    <React.Fragment>
+      <TaskManager/>
+    </React.Fragment>
   )
 }
 
