@@ -4,7 +4,9 @@ import TaskManager from './components/TaskManager';
 const App = () => {
   return (
     <React.Fragment>
+      <div className='block items-center  h-screen '>
       <TaskManager/>
+      </div>
     </React.Fragment>
   )
 }
