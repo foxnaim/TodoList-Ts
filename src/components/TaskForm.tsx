@@ -4,8 +4,8 @@ type Task = {
   id: number;
   title: string;
   description: string;
-  deadline: Date;
-  priority: 'low' | 'medium' | 'high';
+  deadline: Date; // ✅ Было string, изменил на Date
+  priority: "low" | "medium" | "high";
   completed: boolean;
 };
 

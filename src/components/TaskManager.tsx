@@ -11,6 +11,7 @@ type Task = {
   completed: boolean;
 };
 
+
 type Filter = "all" | "completed" | "pending";
 type SortBy = "deadline" | "priority";
 
@@ -20,9 +21,9 @@ const TaskManager: React.FC = () => {
   const [sortBy, setSortBy] = useState<SortBy>("deadline");
 
   const addTask = (newTask: Task) => {
-    setTasks([...tasks, newTask]);
+    setTasks([...tasks, newTask]); 
   };
-
+  
   const deleteTask = (id: number) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
